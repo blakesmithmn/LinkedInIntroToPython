@@ -1,5 +1,5 @@
 import csv
-import json
+import json # JSON module utility!
 from pprint import pprint
 
 EINSTEIN = {
