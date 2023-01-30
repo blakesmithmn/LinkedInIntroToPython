@@ -28,6 +28,10 @@ with open("laureates.csv", "r") as f:
 
 laureates_beginning_with_a = []
 # LinkedIn learner code here
+for laureate in laureates:
+    if laureate['name'][0] == "A": # the syntax was a little different than expected but we reference the key first and THEN the index of the string we want ... in this case 'A'
+        pprint(laureate)
+        laureates_beginning_with_a.append(laureate) # add this laureate into the list that will be dumped into the CSV
 
 
 with open("laureates.json", "w") as f:
